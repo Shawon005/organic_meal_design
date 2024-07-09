@@ -183,7 +183,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12 col-md-2 col-lg-2">
-					<div class="profile-nav-section">
+					<div class="profile-nav-section text-center">
 						<div class="current-page">
 							<span><a href="#">Home</a> </span>
 							<span><a href="#"> > </a> </span>
@@ -191,21 +191,24 @@
 						</div>
 						<div class="profile-nav">
 							<ul>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle m-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-user me-2"></i> My Account</a>
-									<ul class="dropdown-menu nav-sub">
-										<li><a class="dropdown-item pt-0" href="profile-account-info.html">Account Info</a></li>
-										<li class=" border border-end-0 border-start-0"><a class="dropdown-item" href="profile-address-details.html">Address Details</a></li>
-										<li><a class="dropdown-item pb-0" href="profile-update-card.html">Update Card</a></li>
-									</ul>
+								
+								<li class="nav-item  "data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+									<a class="nav-link  dropdown-toggle m-0" ><i class="fa-solid fa-user me-2"></i> My Account</a>
+									
 								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle m-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-cart-shopping me-2"></i> Order</a>
-									<ul class="dropdown-menu nav-sub">
-										<li class=" border-bottom"><a class="dropdown-item pt-0" href="profile-my-order.html">My Order</a></li>
-										<li><a class="dropdown-item pb-0" href="profile-edit-meal-menu.html">Edit Meal Menu</a></li>
-									</ul>
+								<ul class=" nav-sub collapse" id="collapseExample">
+									<li><a class=" pt-0" href="profile-account-info.html">Account Info</a></li>
+									<li class=" border border-end-0 border-start-0"><a class="" href="profile-address-details.html">Address Details</a></li>
+									<li><a class=" pb-0" href="profile-update-card.html">Update Card</a></li>
+								</ul>
+								<li class="nav-item" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+									<a class="nav-link dropdown-toggle m-0" ><i class="fa-solid fa-cart-shopping me-2"></i> Order</a>
+									
 								</li>
+								<ul class="nav-sub collapse" id="collapseExample1">
+									<li class=" border-bottom"><a class=" pt-0" href="profile-my-order.html">My Order</a></li>
+									<li><a class=" pb-0" href="profile-edit-meal-menu.html">Edit Meal Menu</a></li>
+								</ul>
 								<li>
 									<a href="profile-subscription.html"><i class="fa-solid fa-rotate-right me-2"></i> Subscription</a>
 								</li>
@@ -225,7 +228,7 @@
 							<div class="col-12">
 								<p class="profile-heading-2">Account Information</p>
 							</div>
-							<div class="col-sm-12 col-md-10 col-lg-10">
+							<div class="col-sm-12 col-md-11 col-lg-11">
 								<div class="profile-all-card">
 									<form class="row report-form">
 										<div class="col-md-12">
@@ -268,7 +271,7 @@
 							<div class="col-12">
 								<p class="profile-heading-2">Change Password</p>
 							</div>
-							<div class="col-sm-12 col-md-10 col-lg-10">
+							<div class="col-sm-12 col-md-11 col-lg-11">
 								<div class="profile-all-card">
 									<form class="row report-form">
 										<!-- <div class="col-md-12 ">
