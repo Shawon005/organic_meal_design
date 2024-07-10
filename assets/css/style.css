@@ -139,13 +139,13 @@
     .nav-icon{
 		color: #3A550E;
 		padding: 8px 12px;
-		border: 1px solid #3A550E;
+		border: 1px solid #B4B4B4;
 		border-radius: 50%;
 		background-color: #fff;
     }
     .nav-icon:hover {
-    	background-color: #3A550E;
-    	color: #E7E7E7;;
+    	background-color: #E7E7E7;
+    	color: #3A550E;
     }
 /***	navbar-section-end	***/
 
@@ -735,7 +735,7 @@
 		}
 		.price-plan-btn{
 			border: 1px solid #3A550E;
-			padding: 16px 32px 16px 32px;
+			padding: 12px 32px 12px 32px;
 			display: inline-block;
 			background-color: #3A550E;
 			font-family: "Roboto", sans-serif;
@@ -1121,7 +1121,8 @@
 		background-color: #EBEEE7;
 		font-size: 16px;
 		border-radius: 50px;
-		width: 131px;
+		width: 100%;
+		/* width: 131px; */
 		height: 43px;
 		text-align: center;
 		line-height: 19.2;
@@ -1281,7 +1282,8 @@
 		font-weight: 400;
 		text-decoration: none;
 		height: 43px;
-		min-width: 131px;
+		width: 100%;
+		/* min-width: 131px; */
 		text-align: center;
 	}
 	.bundle-add-btn-2{
@@ -1295,7 +1297,8 @@
 		font-weight: 400;
 		text-decoration: none;
 		height: 43px;
-		min-width: 131px;
+		width: 100%;
+		/* min-width: 131px; */
 		text-align: center;
 	}
 	.bundle-add-btn-3{
@@ -2352,7 +2355,7 @@
 		color: #4FBF26;
 	}
 	.discount-code{
-		margin: 32px 0 32px 0;
+		margin: 16px 0 16px 0;
 	}
 	.input-code{
 		border: 1px solid #B4B4B4;
@@ -2520,10 +2523,10 @@
 	.scroll-meals{
 		overflow: scroll;
 		overflow-x: scroll;
-		max-height: 125px;
+		max-height: 90px;
 		overflow-x: hidden;
 		background-color: transparent;
-		margin-top: 32px;
+		margin-top: 24px;
 	}
 /***	order-now-login/sign/payment-pages-end	***/
 
@@ -2658,6 +2661,7 @@
 		line-height: 19.2px;
 		color: #5D5D5D;
 		text-decoration: none;
+		margin-left: 10px;
     }
     .prof-text-5{
     	font-family: "Roboto", sans-serif;
@@ -3736,7 +3740,7 @@
 }
 .border_tr{
 	/* border: 2px solid #000000; */
-	border-top:    1px solid  #000000;
+	/* border-top:    1px solid  #000000; */
 	border-right:  1px solid #000000;
 }
 .dropdown-toggle::after{
@@ -3744,4 +3748,7 @@
 }
 symbol{
 	fill:red;
+}
+.btn-hovor:hover{
+	background-color: #273909;
 }

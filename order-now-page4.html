@@ -287,8 +287,8 @@
 							</p>
 							<div class="">
 								
-								<a href="#" class="bundle-add-btn add-b rounded-pill">Add</a>
-								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty qnty" size="4" pattern="[0-9]*" inputmode="numeric">
+								<a class="bundle-add-btn rounded-pill add-b add1" data-val="1" >Add</a>
+								<input type="number" step="1" min="0" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty qnty1 qnty-c" data-val="1"  size="4" pattern="[0-9]*" inputmode="numeric">
 							</div>
 						</div>
 					</div>
@@ -319,8 +319,8 @@
 								<span class="ex-price-2 text-decoration-line-through">£41.86</span>
 							</p>
 							<div class="d-flex gap-2">
-								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric">
-								<a href="#" class="bundle-add-btn-2 rounded-pill">Added</a>
+								<input type="number" step="1" min="0" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty qnty2 qnty-c"  data-val="2" size="4" pattern="[0-9]*" inputmode="numeric">
+								<a  class="bundle-add-btn-2 rounded-pill add-b add2" data-val="2" >Added</a>
 							</div>
 						</div>
 					</div>
@@ -351,7 +351,7 @@
 								<span class="ex-price-2 text-decoration-line-through">£41.86</span>
 							</p>
 							<div class="d-flex gap-2">
-								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric">
+								<input type="number" step="1" min="0" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric">
 								<a href="#" class="bundle-add-btn-3 rounded-pill">Out of Stock</a>
 							</div>
 						</div>
@@ -454,7 +454,7 @@
 								<span class="ex-price-2 text-decoration-line-through">£41.86</span>
 							</p>
 							<div class="d-flex gap-2">
-								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric">
+								<input type="number" step="1" min="1" max="" name="quantity" value="0" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric">
 								<a href="#" class="bundle-add-btn-2 rounded-pill">Added</a>
 							</div>
 						</div>
@@ -667,8 +667,20 @@
 	<script type="text/javascript" src="assets/js/main.js"></script>
 	<script>
 		$(document).ready(function(){
-			// console.log(('.hello').text());
-		
+			$('.qnty-c').hide();
+			$('.add-b').on('click',function(){
+				val= $(this).data('val');
+				$('.add'+val).hide();
+				$('.qnty'+val).show();
+			})
+			$('.qnty-c').on('click',function(){
+			val2=$(this).data('val');
+			val3=$(this).val();
+			 if(val3==0){
+				$('.qnty'+val2).hide();
+				$('.add-b').show();
+			 }
+			})
 		   
 		});
 	</script>
