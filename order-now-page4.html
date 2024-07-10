@@ -285,9 +285,10 @@
 								<span class="ex-price-1">£35.00</span>
 								<span class="ex-price-2 text-decoration-line-through">£41.86</span>
 							</p>
-							<div class="d-flex gap-2">
-								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric">
-								<a href="#" class="bundle-add-btn rounded-pill">Add</a>
+							<div class="">
+								
+								<a href="#" class="bundle-add-btn add-b rounded-pill">Add</a>
+								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty qnty" size="4" pattern="[0-9]*" inputmode="numeric">
 							</div>
 						</div>
 					</div>
@@ -667,9 +668,7 @@
 	<script>
 		$(document).ready(function(){
 			// console.log(('.hello').text());
-			$('.hello').on('click',function(){
-				$('.hello').css({"background-color":"red","border":"","color":"white"});
-			});
+		
 		   
 		});
 	</script>

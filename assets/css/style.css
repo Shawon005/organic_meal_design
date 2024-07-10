@@ -2544,12 +2544,13 @@
 		color: #000000;
 		text-decoration: none;
 		padding-left: 16px;
+		padding: 8px 16px 8px 16px;
 	}
 	.profile-nav ul{
 		list-style: none;
 	}
 	.profile-nav ul li{
-		padding: 8px 16px 8px 0px;
+		
 		margin-bottom: 16px;
 	}
 	.profile-nav ul li:hover{
