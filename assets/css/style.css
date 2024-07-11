@@ -3739,9 +3739,10 @@
 	top:16%
 }
 .border_tr{
-	/* border: 2px solid #000000; */
-	/* border-top:    1px solid  #000000; */
-	border-right:  1px solid #000000;
+	border-right: 1px solid #B4B4B4;
+}
+.border_br{
+	border-bottom: 1px solid #B4B4B4;
 }
 .dropdown-toggle::after{
 	margin-left: .755em !important;
@@ -3752,3 +3753,11 @@ symbol{
 .btn-hovor:hover{
 	background-color: #273909;
 }
+.form-floating > .form-control, .form-floating > .form-control-plaintext {
+	padding: 1rem 1.75rem 0rem 2rem !important;
+
+  }
+
+  hr {
+	margin: 0px !important ;
+  }
