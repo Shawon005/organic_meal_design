@@ -184,11 +184,11 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-2 col-lg-2">
 					<div class="profile-nav-section">
-						<div class="current-page">
+						<!-- <div class="current-page">
 							<span><a href="#">Home</a> </span>
 							<span><a href="#"> > </a> </span>
 							<span><a href="#">Profile</a> </span>
-						</div>
+						</div> -->
 						<div class="profile-nav">
 							<ul>
 								<li class="nav-item dropdown">
@@ -340,95 +340,190 @@
 								</div>
 							</div>
 							<div class="col-12">
-								<p class="profile-heading-2 mt-5">My Orders</p>
-								<div class="blog-content-name d-flex">
-									<span class="badge content-name rounded-pill">All Order</span>
-									<span class="badge content-name-2 rounded-pill">Pending</span>
-									<span class="badge content-name-2 rounded-pill">Paid</span>
-									<span class="badge content-name-2 rounded-pill">Shiped</span>
-
-									<span class="ms-auto">
+								<p class="profile-heading-2">My Orders</p>
+								
+								<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+									<li class="nav-item" role="presentation">
+									  <button class="nav-link active content-name-2 rounded-pill" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All Order</button>
+									</li>
+									<li class="nav-item" role="presentation">
+									  <button class="nav-link content-name-2 rounded-pill" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-Pending" type="button" role="tab" aria-controls="pills-Pending" aria-selected="false">Pending</button>
+									</li>
+									<li class="nav-item" role="presentation">
+									  <button class="nav-link content-name-2 rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-Paid" type="button" role="tab" aria-controls="pills-Paid" aria-selected="false">Paid</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link content-name-2 rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-Shiped" type="button" role="tab" aria-controls="pills-Shiped" aria-selected="false">Shiped</button>
+									  </li>
+									  <span class="ms-auto">
 										<a href="#" class="blue-text">View all</a>
 									</span>
-								</div>
-								<div class="recent-order-list">
-									<div class="row">
-										<div class="col-12">
-											<div class="order-table-head d-flex justify-content-around rounded-top-4">
-												<span>Status</span>
-												<span>Invoice Number</span>
-												<span>Name</span>
-												<span>Delivery Date</span>
-												<span>Price</span>
-												<span>More</span>
-											</div>
-											<div class="order-table-list d-flex justify-content-around">
-												<span>
-													<a href="#" class="prfl-tag-1 me-3">Open</a>
-												</span>
-												<span class="prof-text-2">#1958108</span>
-												<span class="prof-text-4">Succulent Steak Fettuccine</span>
-												<span class="prof-text-4">12/11/2024</span>
-												<span class="prof-text-2">£35.00</span>
-												<span>
-													<a href="#" class="prfl-tag-4">View More</a>
-												</span>
-											</div>
-											<div class="order-table-list d-flex justify-content-around">
-												<span>
-													<a href="#" class="prfl-tag-2">Shipped</a>
-												</span>
-												<span class="prof-text-2">#1958108</span>
-												<span class="prof-text-4">Succulent Steak Fettuccine</span>
-												<span class="prof-text-4">12/11/2024</span>
-												<span class="prof-text-2">£35.00</span>
-												<span>
-													<a href="#" class="prfl-tag-4">View More</a>
-												</span>
-											</div>
-											<div class="order-table-list d-flex justify-content-around">
-												<span>
-													<a href="#" class="prfl-tag-1 me-3">Open</a>
-												</span>
-												<span class="prof-text-2">#1958108</span>
-												<span class="prof-text-4">Succulent Steak Fettuccine</span>
-												<span class="prof-text-4">12/11/2024</span>
-												<span class="prof-text-2">£35.00</span>
-												<span>
-													<a href="#" class="prfl-tag-4">View More</a>
-												</span>
-											</div>
-											<div class="order-table-list d-flex justify-content-around">
-												<span>
-													<a href="#" class="prfl-tag-2">Shipped</a>
-												</span>
-												<span class="prof-text-2">#1958108</span>
-												<span class="prof-text-4">Succulent Steak Fettuccine</span>
-												<span class="prof-text-4">12/11/2024</span>
-												<span class="prof-text-2">£35.00</span>
-												<span>
-													<a href="#" class="prfl-tag-4">View More</a>
-												</span>
-											</div>
-											<div class="order-table-list d-flex justify-content-around border-bottom-0">
-												<span>
-													<a href="#" class="prfl-tag-3">Canceled</a>
-												</span>
-												<span class="prof-text-2">#1958108</span>
-												<span class="prof-text-4">Succulent Steak Fettuccine</span>
-												<span class="prof-text-4">12/11/2024</span>
-												<span class="prof-text-2">£35.00</span>
-												<span>
-													<a href="#" class="prfl-tag-4">View More</a>
-												</span>
+								  </ul>
+
+								<div class="tab-content" id="pills-tabContent">
+									<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+										<div class="table-responsive t-border">
+											<table class="table ">
+												<thead>
+												<tr style="--bs-table-bg: #EBEEE7;">
+													<th scope="col">Status</th>
+													<th scope="col">Invoice Number</th>
+													<th scope="col">Name</th>
+													<th scope="col">Delivery Date</th>
+													<th scope="col">Price</th>
+													<th scope="col">More</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-1">Open</a>
+													</span></th>
+													<td>#1958108</td>
+													<td>Succulent Steak Fettuccine</td>
+													<td>12/11/2024</td>
+													<td>£35.00</td>
+													<td><a class="btn-sm prfl-tag-4"href="">view more</a></td>
+												</tr>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-2">Shipping</a>
+													</span></th>
+													<td>#1958108</td>
+													<td>Succulent Steak Fettuccine</td>
+													<td>12/11/2024</td>
+													<td>£35.00</td>
+													<td><a href="" class="btn-sm prfl-tag-4">view more</a></td>
+												</tr>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-3">Cencle</a>
+													</span></th>
+													<td>#1958108</td>
+													<td>Succulent Steak Fettuccine</td>
+													<td>12/11/2024</td>
+													<td>£35.00</td>
+													<td><a href="" class="btn-sm prfl-tag-4">view more</a></td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane fade show " id="pills-Pending" role="tabpanel" aria-labelledby="pills-Pending-tab" tabindex="0">
+										<div class="table-responsive t-border">
+											<table class="table ">
+												<thead>
+												<tr style="--bs-table-bg: #EBEEE7;">
+													<th scope="col">Status</th>
+													<th scope="col">Invoice Number</th>
+													<th scope="col">Name</th>
+													<th scope="col">Delivery Date</th>
+													<th scope="col">Price</th>
+													<th scope="col">More</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-1">Open</a>
+													</span></th>
+													<td>#1954544</td>
+													<td>Succulent Fettuccine</td>
+													<td>12/11/2023</td>
+													<td>£45.00</td>
+													<td><a class="btn-sm prfl-tag-4"href="">view more</a></td>
+												</tr>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-2">Shipping</a>
+													</span></th>
+													<td>#1348108</td>
+													<td>Succulent  Fettuccine</td>
+													<td>12/11/2024</td>
+													<td>£325.00</td>
+													<td><a href="" class="btn-sm prfl-tag-4">view more</a></td>
+												</tr>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-3">Cencle</a>
+													</span></th>
+													<td>#1958238</td>
+													<td>Succulent Steak </td>
+													<td>12/11/2014</td>
+													<td>£235.00</td>
+													<td><a href="" class="btn-sm prfl-tag-4">view more</a></td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane fade show" id="pills-Paid" role="tabpanel" aria-labelledby="pills-Paid-tab" tabindex="0">
+										<div class="table-responsive t-border">
+											<table class="table ">
+												<thead>
+												<tr style="--bs-table-bg: #EBEEE7;">
+													<th scope="col">Status</th>
+													<th scope="col">Invoice Number</th>
+													<th scope="col">Name</th>
+													<th scope="col">Delivery Date</th>
+													<th scope="col">Price</th>
+													<th scope="col">More</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-1">Open</a>
+													</span></th>
+													<td>#1958108</td>
+													<td>Succulent Steak Fettuccine</td>
+													<td>12/11/2024</td>
+													<td>£35.00</td>
+													<td><a class="btn-sm prfl-tag-4"href="">view more</a></td>
+												</tr>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-2">Shipping</a>
+													</span></th>
+													<td>#1958108</td>
+													<td>Succulent Steak Fettuccine</td>
+													<td>12/11/2024</td>
+													<td>£35.00</td>
+													<td><a href="" class="btn-sm prfl-tag-4">view more</a></td>
+												</tr>
+												<tr>
+													<th scope="row"><span>
+														<a href="#" class="prfl-tag-3">Cencle</a>
+													</span></th>
+													<td>#1958108</td>
+													<td>Succulent Steak Fettuccine</td>
+													<td>12/11/2024</td>
+													<td>£35.00</td>
+													<td><a href="" class="btn-sm prfl-tag-4">view more</a></td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane fade show" id="pills-Shiped" role="tabpanel" aria-labelledby="pills-Shiped-tab" tabindex="0">
+										<div class="alart-div mb-4">
+											<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+												<symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+													<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+												</symbol>
+											</svg>
+											<div class="alert alert-danger d-flex align-items-center" role="alert">
+												<svg class="bi flex-shrink-0 me-2 svg_ctm" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+												<div class="prof-text-4 text-danger">You don't have any active order.<a href="" class="text-danger">Click here to make an order.</a></div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							
 							<div class="col-12">
 								<div class="text-center btn-margin">
-									<a href="#" class="prfl-btn-2"><i class="fa-solid fa-left-long me-2"></i> Back to My Order</a>
+									<a href="#" class="prfl-btn-2"><i class="fa-solid fa-arrow-left-long me-2"></i> Back to My Order</a>
 								</div>
 							</div>
 						</div>
