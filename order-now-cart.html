@@ -173,7 +173,7 @@
 	<section class="order-login-section" style="background: linear-gradient(110deg, #ffff 60%, #f8f8f8 60%);">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-6 col-lg-6" >
+				<div class="col-sm-12 col-md-6 col-lg-6" style="position: relative;" >
 					
 					<div class="">
 						<!-- <div class="">
@@ -199,10 +199,10 @@
 							<hr class="value-hr">
 						</div>
 						<div class="row discount-code">
-							<div class="col-6">
+							<div class="col-5">
 								<p class="right-lg-1 ms-2">Product Details</p>
 							</div>
-							<div class="col-2">
+							<div class="col-3">
 								<p class="right-lg-1 ms-2">Quantity</p>
 							</div>
 							<div class="col-2">
@@ -219,28 +219,20 @@
 										<img src="assets/images/blog-mini.png" class="img-fluid recent-img rounded" alt="...">
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-3">
 									<div class="right-lg-2 mt-2">Succulent Steak Fettuccine</div>
 									<!-- <div class="right-lg-5 mt-2">12 Meals</div> -->
 									<div class="right-lg-3 mt-2"><i class="fa-solid fa-trash-can"></i>  Delete</div>
 								</div>
-								<div class="col-2">
+								<div class="col-3">
 									<div class="right-lg-2 text-center mt-2">
-										<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric" style="width: 75px; height: 35px;">
-										<!-- <div class="input-group">
-											<span class="input-group-btn">
-												<button type="button" class="btn btn-danger btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-													<span class="glyphicon glyphicon-minus">-</span>
-												</button>
-											</span>
-											<input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-											<span class="input-group-btn">
-												<button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[1]">
-													<span class="glyphicon glyphicon-plus">+</span>
-												</button>
-											</span>
-										</div> -->
+										<!-- <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric" style="width: 75px; height: 35px;"> -->
 										
+										<div class="input-group">
+											<input type="button" value="-" class="button-minus" data-field="quantity">
+											<input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+											<input type="button" value="+" class="button-plus" data-field="quantity">
+										  </div>
 										
 										  
 									</div>
@@ -263,14 +255,19 @@
 										<img src="assets/images/blog-mini.png" class="img-fluid recent-img rounded" alt="...">
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-3">
 									<p class="right-lg-2 mt-2">Succulent Steak Fettuccine</p>
 									<p class="right-lg-5">12 Meals<br>
 									<span class="right-lg-3"><i class="fa-solid fa-trash-can"></i>  Delete</span></p>
 								</div>
-								<div class="col-2">
+								<div class="col-3">
 									<div class="right-lg-2 text-center mt-2">
-										<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric" style="width: 75px; height: 35px;">
+										<!-- <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty" size="4" pattern="[0-9]*" inputmode="numeric" style="width: 75px; height: 35px;"> -->
+										<div class="input-group">
+											<input type="button" value="-" class="button-minus" data-field="quantity">
+											<input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+											<input type="button" value="+" class="button-plus" data-field="quantity">
+										  </div>
 									</div>
 
 								</div>
@@ -295,28 +292,29 @@
 									<a href="order-now-login.html" class="price-plan-btn btn-hovor rounded-pill">Checkout <i class="fa-solid fa-arrow-right ms-2"></i></a>
 								</div>
 							</div>
-							<div class="bottom-tabs">
-								<hr class="value-hr">
-								<div class="d-flex justify-content-evenly">
-									<span>
-										<a href="" class="order-left-tag">Refund policy</a>
-									</span>
-									<span>
-										<a href="" class="order-left-tag">Shipping Policy</a>
-									</span>
-									<span>
-										<a href="" class="order-left-tag">Privacy Policy</a>
-									</span>
-									<span>
-										<a href="" class="order-left-tag">Terms of service</a>
-									</span>
-									<span>
-										<a href="" class="order-left-tag">Subscription Policy</a>
-									</span>
-								</div>
-							</div>
+							
 						</div>	
 					</div>	
+					<div class="bottom-tabs">
+						<hr class="value-hr">
+						<div class="d-flex justify-content-evenly">
+							<span class="me-4">
+								<a href="" class="order-left-tag">Refund policy</a>
+							</span>
+							<span class="me-4">
+								<a href="" class="order-left-tag">Shipping Policy</a>
+							</span>
+							<span class="me-4"> 
+								<a href="" class="order-left-tag">Privacy Policy</a>
+							</span>
+							<span class="me-4">
+								<a href="" class="order-left-tag">Terms of service</a>
+							</span>
+							<span class="">
+								<a href="" class="order-left-tag">Subscription Policy</a>
+							</span>
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-6">
 					<div class="order-login-right">
