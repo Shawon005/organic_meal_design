@@ -288,7 +288,12 @@
 							<div class="">
 								
 								<a class="bundle-add-btn rounded-pill add-b add1" data-val="1" >Add</a>
-								<input type="number" step="1" min="0" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty qnty1 qnty-c" data-val="1"  size="4" pattern="[0-9]*" inputmode="numeric">
+								<div class="input-group  qnty1 qnty-c" data-val="1">
+									<input type="button" value="-" class="button-minus rounded-start-4" data-field="quantity">
+									<input type="number" step="1" max="" value="1" name="quantity" class="qnty-v1 quantity-field1">
+									<input type="button" value="+" class="button-plus rounded-end-4" data-field="quantity">
+								</div>
+								<!-- <input type="number" step="1" min="0" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty qnty1 qnty-c" data-val="1"  size="4" pattern="[0-9]*" inputmode="numeric"> -->
 							</div>
 						</div>
 					</div>
@@ -318,9 +323,14 @@
 								<span class="ex-price-1">£35.00</span>
 								<span class="ex-price-2 text-decoration-line-through">£41.86</span>
 							</p>
-							<div class="d-flex gap-2">
-								<input type="number" step="1" min="0" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty qnty2 qnty-c"  data-val="2" size="4" pattern="[0-9]*" inputmode="numeric">
-								<a  class="bundle-add-btn-2 rounded-pill add-b add2" data-val="2" >Added</a>
+							<div class="">
+								<!-- <input type="number" step="1" min="0" max="" name="quantity" value="1" title="Quantity" class="input-text custom-qnty qnty2 qnty-c"  data-val="2" size="4" pattern="[0-9]*" inputmode="numeric"> -->
+								<a  class="bundle-add-btn rounded-pill add-b add2" data-val="2" >Added</a>
+								<div class="input-group  qnty2 qnty-c" data-val="2">
+									<input type="button" value="-" class="button-minus rounded-start-4" data-field="quantity">
+									<input type="number" step="1" max="" value="1" name="quantity" class="qnty-v2 quantity-field1">
+									<input type="button" value="+" class="button-plus rounded-end-4" data-field="quantity">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -665,20 +675,22 @@
 	<script src="assets/js/jquery-3.7.0.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/input.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.qnty-c').hide();
 			$('.add-b').on('click',function(){
-				val= $(this).data('val');
-				$('.add'+val).hide();
-				$('.qnty'+val).show();
+				add_b_n= $(this).data('val');
+				$('.add'+add_b_n).hide();
+				$('.qnty'+add_b_n).show();
 			})
 			$('.qnty-c').on('click',function(){
-			val2=$(this).data('val');
-			val3=$(this).val();
-			 if(val3==0){
-				$('.qnty'+val2).hide();
-				$('.add-b').show();
+				;
+			inp_b_v=$(this).data('val');
+			inp_val=$('.qnty-v'+inp_b_v).val();
+			 if(inp_val==0){
+				$('.qnty'+inp_b_v).hide();
+				$('.add'+inp_b_v).show();
 			 }
 			})
 		   
