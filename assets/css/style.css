@@ -3960,8 +3960,16 @@ input[type="number"] {
 	height: 38px;
 	left: -6px;
 	text-align: center;
-	width: 199px;
+	/* width: 199px; */
 	display: inline-block;
 	font-size: 13px;
 	resize: vertical;
+}
+input{
+	line-height: 2.0 !important;
+	border: 1px solid #E7E7E7 !important;
+}
+select{
+	line-height: 2.0 !important;
+	border: 1px solid #E7E7E7 !important;
 }
