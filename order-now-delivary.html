@@ -18,13 +18,13 @@
 	<section class="order-login-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-6 col-lg-6">
+				<div class="col-sm-12 col-md-6 col-lg-6"style="position: relative;">
 					<div class="order-login-left">
 						<div class="">
 							<img src="assets/images/Frame-513.png" class="img-fluid">
 						</div>
 
-						<div class="current-page">
+						<div class="current-page mb-4">
 							<span><a href="#">Cart</a> </span>
 							<span><a href="#"> > </a> </span>
 							<span><a href="#">Log In</a> </span>
@@ -34,7 +34,7 @@
 							<span><a href="#">Payment</a> </span>
 						</div>
 
-						<div class="dlvry-pay-card my-5 position-relative">
+						<div class="dlvry-pay-card my-3 position-relative">
 							<div class="d-flex justify-content-center gap-3">
 								<a href="#" class="express-btn"><i class="fa-brands fa-apple-pay fa-2x"></i></a>
 								<a href="#" class="express-btn"><i class="fa-brands fa-google-pay fa-2x"></i></a>
@@ -51,70 +51,63 @@
 						</div>
 
 						<form class="row report-form">
-							<div class="d-flex my-4">
+							<div class="d-flex mb-3">
 								<h2>Shipping Address</h2>
 							</div>
+							<div class="col-md-12" >
+								<div class=" ">
+									<label for="floatingInput" class=" pb-1">Country</label>
+									<select class="form-select form-control " aria-label="Default select example">
+										<option value="1" selected>USA</option>
+									</select>
+								</div>
+							</div>
 							<div class="col-md-12">
-								<div class=" form-floating">
-									<label for="floatingInput" class="report-custom-label pb-1">Country</label>
-									<select class="form-select form-control report-custom-form rounded-pill" aria-label="Default select example">
+								<div class=" ">
+									<label for="validationServer03 " class="form-label mt-2">Full Name</label>
+									<input type="text" class="form-control is-invalid " id="validationServer03" aria-describedby="validationServer03Feedback" required>
+									
+								</div>
+							</div>
+							<div class="col-md-12 mt-2">
+								<div class="">
+									<label for="floatingInput" class="form-label">Company (Optional)</label>
+									<input type="text" class="form-control" id="floatingInput" placeholder="">
+									
+								</div>
+							</div>
+							<div class="col-md-12 mt-2">
+								<div class=" ">
+									<label for="validationServer03 " class="form-label ">Address</label>
+									<input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+									
+								</div>
+							</div>
+							<div class="col-md-12 mt-2">
+								<div class=" ">
+									<label for="floatingInput" class="form-label">Apartment, Suite, etc (Optional)</label>
+									<input type="text" class="form-control " id="floatingInput" placeholder="">
+									
+								</div>
+							</div>
+							<div class="col-md-12 mt-2">
+								<div class=" ">
+									<label for="" class="form-label ">City</label>
+									<select class="form-select form-control" aria-label="Default select example" id="validationServer03" required>
 										<option selected></option>
 										<option value="1">USA</option>
 										<option value="2">Two</option>
 										<option value="3">Three</option>
 									</select>
+								
 								</div>
 							</div>
-							<div class="col-md-12">
-								<div class=" form-floating">
-									<label for="validationServer03 floatingInput" class="form-label report-custom-label">Full Name</label>
-									<input type="text" class="form-control is-invalid  rounded-pill" id="validationServer03 floatingInput" aria-describedby="validationServer03Feedback" required>
+							<div class="col-md-12 mt-2">
+								<div class=" ">
+									<label for="validationServer03 " class="form-label ">Enter number</label>
+									<input type="text" class="form-control is-invalid  " id="validationServer03 floatingInput" aria-describedby="validationServer03Feedback" required>
 									<div id="validationServer03Feedback" class="invalid-feedback error-input">
-										Please enter your full name
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class=" form-floating">
-									<input type="text" class="form-control report-custom-form rounded-pill" id="floatingInput" placeholder="Full name">
-									<label for="floatingInput" class="report-custom-label">Company (Optional)</label>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class=" form-floating">
-									<label for="validationServer03 floatingInput" class="form-label report-custom-label">Address</label>
-									<input type="text" class="form-control is-invalid  rounded-pill" id="validationServer03 floatingInput" aria-describedby="validationServer03Feedback" required>
-									<div id="validationServer03Feedback" class="invalid-feedback error-input">
-										Please enter your address
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class=" form-floating">
-									<input type="text" class="form-control report-custom-form rounded-pill" id="floatingInput" placeholder="Full name">
-									<label for="floatingInput" class="report-custom-label">Apartment, Suite, etc (Optional)</label>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class=" form-floating">
-									<label for="floatingInput" class="report-custom-label pb-1">City</label>
-									<select class="form-select form-control rounded-pill is-invalid" aria-label="Default select example" id="validationServer03" required>
-										<option selected></option>
-										<option value="1">USA</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									</select>
-									<div id="validationServer03Feedback" class="invalid-feedback error-input">
-										Please enter your city
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class=" form-floating">
-									<label for="validationServer03 floatingInput" class="form-label report-custom-label">Enter number</label>
-									<input type="text" class="form-control is-invalid  rounded-pill" id="validationServer03 floatingInput" aria-describedby="validationServer03Feedback" required>
-									<div id="validationServer03Feedback" class="invalid-feedback error-input">
-										Please enter a valid Phone number
+									
 									</div>
 								</div>
 							</div>
@@ -122,20 +115,20 @@
 							<div class="col-md-12">
 								<div class="form-check"> 
 									<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-									<label class="form-check-labelmt-0 mb-3" for="flexCheckChecked">Save these information for next time</label>
+									<label class="form-check-labelmt-0 mb-3 ms-2" for="flexCheckChecked">Save these information for next time</label>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="mt-5">
-									<a href="order-now-page4.html" class="return-cart-btn"><i class="fa-solid fa-left-long me-2"></i> Return to cart</a>
+									<a href="order-now-page4.html" class="return-cart-btn"><i class="fa-solid fa-arrow-left-long me-2"></i> Return to cart</a>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="text-end mt-4">
-									<a href="order-now-payment.html" class="price-plan-btn rounded-pill">Continue to Payment <i class="fa-solid fa-right-long ms-2"></i></a>
+									<a href="order-now-payment.html" class="price-plan-btn rounded-pill">Continue to Payment <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
 								</div>
 							</div>
-							<div class="bottom-tabs">
+							<div class="bottom-tabs mt-5">
 								<hr class="value-hr">
 								<div class="d-flex justify-content-evenly">
 									<span>
@@ -263,12 +256,12 @@
 						</div>
 						<hr class="value-hr">
 						<div class="d-flex discount-code">
-							<div class=" form-floating col-md-9">
-								<input type="text" class="form-control input-code rounded-pill" id="floatingInput" placeholder="first name">
-								<label for="floatingInput" class="report-custom-label">Gift card or discount code</label>
+							<div class="  col-md-9">
+								<input type="text" class="form-control input-code " id="floatingInput" placeholder="first name">
+								<label for="floatingInput" class="l">Gift card or discount code</label>
 							</div>
 							<div class="ms-auto">
-								<a href="#" class="log-apply-btn rounded-pill">Apply </a>
+								<a href="#" class="log-apply-btn ">Apply </a>
 							</div>
 						</div>
 						<div class="login-sub-card">

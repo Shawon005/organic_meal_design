@@ -36,16 +36,15 @@
 
 						<div class="pay-card">
 							<div class="">
-								<p class="right-lg-1">Contact 
-									<span class="ms-4 right-lg-5">demomail@gmail.com</span> 
-								</p>
+								<div class="right-lg-1 d-flex mb-4">Contact 
+									<div class="ms-4 right-lg-5">demomail@gmail.com</div> <div class="text-end ms-auto"><a href="order-now-delivary.html" class="right-lg-5 blue-text">Change</a></div>
+								</div>
+								
 								<hr class="value-hr">
-								<p class="right-lg-1">Address 
+								<p class="right-lg-1 mt-4">Address 
 									<span class="ms-4 right-lg-5">abcd road, House no 412, london road, London, United Kingdom</span>
 								</p>
-								<p class="text-end m-0">
-									<a href="order-now-delivary.html" class="right-lg-5 blue-text">Change</a>
-								</p>
+								
 							</div>
 						</div>
 
@@ -53,70 +52,73 @@
 							<h2>Billing Address</h2>
 							<p class="right-lg-1 mb-0">Select the address that matches your card or payment method</p>
 
-							<div class="pay-card-2 mb-0 rounded-top-4">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-									<label class="form-check-label" for="flexRadioDefault3">Same as Shipping address</label>
+							<div class="pay-card-2 rounded-top-4 rounded-bottom-4">
+								<div class=" mb-4 rounded-top-4">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="billing_addresss" id="sameshipping">
+										<label class="form-check-label ms-2" for="sameshipping">Same as Shipping address</label>
+									</div>
+								</div>
+								<hr>
+								<div class=" mt-4 rounded-bottom-4">
+									<!-- <a class="d-flex"  data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> -->
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="billing_addresss" id="diffshipping"data-bs-toggle="collapse" href="#multiCollapseExample1" >
+											<label class="form-check-label right-lg-5 ms-2" for="diffshipping">Use different billing address</label>
+										</div>
+									<!-- </a> -->
 								</div>
 							</div>
-							<div class="pay-card-2 mt-0 rounded-bottom-4">
-								<a class="d-flex"  data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-										<label class="form-check-label right-lg-5" for="flexRadioDefault1">Use different billing address</label>
-									</div>
-								</a>
-							</div>
-							<div class="different-bill rounded-bottom-4 collapse multi-collapse mt-0"  id="multiCollapseExample1">
+							
+
+							<div class="different-bill rounded-top-4 rounded-bottom-4 collapse multi-collapse mb-4"  id="multiCollapseExample1">
 								<form class="row">
 									<div class="col-md-12">
-										<div class=" form-floating mb-3">
+										<div class="  mb-3">
 											<label for="floatingInput" class="form-label diff-bill-label">Full Name</label>
-											<input type="text" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback" >
+											<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback" >
 										</div>
 									</div>
 									<div class="col-md-12">
-										<div class=" form-floating mb-3">
+										<div class="  mb-3">
 											<label for="floatingInput" class="form-label diff-bill-label">Email</label>
-											<input type="text" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback">
+											<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">
 										</div>
 									</div>
 									<div class="col-md-12">
-										<div class=" form-floating mb-3">
+										<div class="  mb-3">
 											<label for="floatingInput" class="form-label diff-bill-label">Phone number</label>
-											<input type="text" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback">	
+											<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">	
 										</div>
 									</div>
 									<div class="col-md-12">
-										<div class=" form-floating mb-3">
+										<div class="  mb-3">
 											<label for="floatingInput" class="form-label diff-bill-label">Address</label>
-											<input type="text" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback">
+											<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">
 										</div>
 									</div>
 									<div class="col-md-12">
-										<div class=" form-floating mb-3">
+										<div class="  mb-3">
 											<label for="floatingInput" class="form-label diff-bill-label">City</label>
-											<input type="text" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback">
+											<input type="text" class="form-control l" id="floatingInput" aria-describedby="validationServer03Feedback">
 										</div>
 									</div>
 									<div class="col-md-12">
-										<div class=" form-floating">
-											<select class="form-select form-control diff-bill-label rounded-pill" aria-label="Default select example" id="validationServer03" required>
-												<option selected>Country</option>
-												<option value="1">USA</option>
-												<option value="2">Two</option>
-												<option value="3">Three</option>
+										<div class=" ">
+											<label for="floatingInput" class="form-label diff-bill-label">Country</label>
+											<select class="form-select form-control diff-bill-label " aria-label="Default select example" id="validationServer03" required>
+												<option selected value="1">USA</option>
 											</select>
 										</div>
 									</div>
 								</form>
 							</div>
 
-							<h2>Shipping method</h2>
+							<h2 class="">Shipping method</h2>
 							<div class="pay-card d-flex">
 								<div class="form-check">
-									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-									<label class="form-check-label" for="flexRadioDefault1"><img src="assets/images/Frame-583.png" class="img-fluid"> </label>
+									<input class="form-check-input rounded-5" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+									<label class="form-check-label ms-2" for="flexRadioDefault1"><img src="assets/images/Frame-583.png" class="img-fluid"> </label>
 								</div>
 								<div class="ms-auto">
 									<span>£6.00 </span>
@@ -125,63 +127,67 @@
 
 							<h2>Payment</h2>
 							<p class="right-lg-1 mb-0">All transaction are secure and encrypted</p>
-							<div class="pay-card-2 mb-0 rounded-top-4">
-								<a class="d-flex"  data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
+							<div class="pay-card-2 rounded-top-4 rounded-bottom-4">
+								<div class=" mb-4 rounded-top-4 d-flex" data-bs-toggle="collapse" href="#multiCollapseExample2">
+									<!-- <a class="d-flex"  data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2"> -->
+										<div class="form-check" >
+											<input class="form-check-input" type="radio" name="payment" id="payment">
+											<label class="form-check-label right-lg-5 ms-2" for="payment">Use card for payment</label>
+										</div>
+										<div class="ms-auto">
+											<img src="assets/images/visa-1.png" class="img-fluid">
+											<img src="assets/images/mastercard.png" class="img-fluid">
+											<img src="assets/images/american-express.png" class="img-fluid">
+										</div>
+									<!-- </a> -->
+								</div> 
+								<div class="different-bill collapse multi-collapse" id="multiCollapseExample2">
+									<form class="row">
+										<div class="col-md-12">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Card Number</label>
+												<input type="password" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback" >
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Name on Card</label>
+												<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">	
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Address</label>
+												<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Expiration Date (MM/YY)</label>
+												<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Security Code</label>
+												<input type="password" class="form-control" id="floatingInput" aria-describedby="validationServer03Feedback">
+											</div>
+										</div>
+									</form>
+								</div> 
+								<hr>
+								<div class=" mt-4 rounded-bottom-4">
 									<div class="form-check">
-										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-										<label class="form-check-label right-lg-5" for="flexRadioDefault1">Use card for payment</label>
+										<input class="form-check-input" type="radio" name="payment" id="cashpayment">
+										<label class="form-check-label ms-2" for="cashpayment"><img src="assets/images/Frame-597.png" class="img-fluid"></label>
 									</div>
-									<div class="ms-auto">
-										<img src="assets/images/visa-1.png" class="img-fluid">
-										<img src="assets/images/mastercard.png" class="img-fluid">
-										<img src="assets/images/american-express.png" class="img-fluid">
-									</div>
-								</a>
-							</div>
-							<div class="different-bill collapse multi-collapse" id="multiCollapseExample2">
-								<form class="row">
-									<div class="col-md-12">
-										<div class=" form-floating mb-3">
-											<label for="floatingInput" class="form-label diff-bill-label">Card Number</label>
-											<input type="password" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback" >
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class=" form-floating mb-3">
-											<label for="floatingInput" class="form-label diff-bill-label">Name on Card</label>
-											<input type="text" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback">	
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class=" form-floating mb-3">
-											<label for="floatingInput" class="form-label diff-bill-label">Address</label>
-											<input type="text" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class=" form-floating mb-3">
-											<label for="floatingInput" class="form-label diff-bill-label">Expiration Date (MM/YY)</label>
-											<input type="text" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class=" form-floating mb-3">
-											<label for="floatingInput" class="form-label diff-bill-label">Security Code</label>
-											<input type="password" class="form-control rounded-pill" id="floatingInput" aria-describedby="validationServer03Feedback">
-										</div>
-									</div>
-								</form>
-							</div>
-							<div class="pay-card-2 mt-0 rounded-bottom-4">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-									<label class="form-check-label" for="flexRadioDefault1"><img src="assets/images/Frame-597.png" class="img-fluid"></label>
 								</div>
 							</div>
+							
 
 							<p class="right-lg-1 mb-2">Where should we leave your box if you aren't in?</p>
 							<div class="col-md-12">
-								<div class=" form-floating mb-3">
+								<div class="  mb-3">
 									<select class="form-select form-control py-3" aria-label="Default select example" id="validationServer03">
 										<option selected>Please select one</option>
 										<option value="1"></option>
@@ -194,8 +200,8 @@
 							<h2>Remember me</h2>
 							<div class="pay-card">
 								<div class="form-check">
-									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-									<label class="form-check-label" for="flexRadioDefault1">Save my information for a faster checkout</label>
+									<input class="form-check-input rounded-5" type="checkbox" name="saveinfo" id="saveinfo">
+									<label class="form-check-label ms-2" for="saveinfo">Save my information for a faster checkout</label>
 								</div>
 							</div>
 
@@ -218,7 +224,7 @@
 									<a href="order-now-success.html" class="price-plan-btn rounded-pill">Pay Now <i class="fa-solid fa-right-long ms-2"></i></a>
 								</div>
 							</div>
-							<div class="bottom-tabs">
+							<!-- <div class="bottom-tabs">
 								<hr class="value-hr">
 								<div class="d-flex justify-content-evenly">
 									<span>
@@ -237,7 +243,7 @@
 										<a href="" class="order-left-tag">Subscription Policy</a>
 									</span>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -346,7 +352,7 @@
 						</div>
 						<hr class="value-hr">
 						<div class="d-flex discount-code">
-							<div class=" form-floating col-md-9">
+							<div class="  col-md-9">
 								<input type="text" class="form-control input-code rounded-pill" id="floatingInput" placeholder="first name">
 								<label for="floatingInput" class="report-custom-label">Gift card or discount code</label>
 							</div>

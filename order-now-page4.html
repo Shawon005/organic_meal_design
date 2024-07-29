@@ -193,7 +193,7 @@
 	<!-- offer-Section-end -->
 
 	<!-- order-now-4-Section-start -->
-	<section class="order-now-section-head">
+	<section class="order-now-section-head" style="position: relative;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-sm-12 col-md-12 col-lg-12">
@@ -245,7 +245,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="cart-type text-center">
-						<h2>Add All In Your Box</h2>
+						<h2>Add meal in your box</h2>
 					</div>
 				</div>
 				<div class="col-12">
@@ -566,7 +566,9 @@
 											<p>Extras</p>
 											<label for="customRange3" class="form-label ms-auto">$35.00</label>
 										</div>
-										<input type="range" class="form-range meal-range" min="0" max="5" step="0.5" id="customRange3">
+										<div class="progress  meal-range mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+											<div class="progress-bar" style="width: 25%"></div>
+										  </div>
 
 										<div class="form-check">
 											<input class="form-check-input modal-check" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
@@ -663,19 +665,24 @@
 			</div>
 		</div>
 	</section>
-	<section class="meal-select-head-2">
+	<section class="meal-select-head-2 buttom_sticky">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div class="d-flex justify-content-between">
+				<div class="col-sm-12 col-md-12 col-lg-12 ">
+					<div class="d-flex justify-content-between ">
 						<div class="progress-meal">
-							<h2>Meal Selected</h2>
+							<div class="progress-meal_heading">Meal Selected</div>
 							<label for="customRange3" class="form-label">10/12</label>
-							<input type="range" class="form-range meal-range" min="0" max="5" step="0.5" id="customRange3">
+							<div class="progress  meal-range" style="width: 300px;"role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar" style="width: 25%"></div>
+							  </div>
+							  
+							<!-- <label for="customRange3" class="form-label">10/12</label>
+							<input type="range" class="form-range meal-range" min="0" max="5" step="0.5" id="customRange3"> -->
 						</div>
-						<div class="progress-meal-2">
-							<h2>Total: £35.00 </h2>
-							<a href="order-now-login.html" class="meal-check-btn">Check Out <i class="fa-solid fa-right-long ms-2"></i></a>
+						<div class="progress-meal-2 d-flex">
+							<h2 class="mt-4">Total: £35.00 </h2>
+							<button href="order-now-login.html" class="meal-check-btn m-2">Check Out <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
 						</div>
 					</div>
 				</div>
