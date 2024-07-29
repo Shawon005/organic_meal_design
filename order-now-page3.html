@@ -254,8 +254,8 @@
 				</label>
 				<input type="radio" name="card3" id="card25" class="d-none">
 				<label class="col-sm-12 col-md-3 col-lg-2" for="card25">
-					<div class="diet-card-2 card_body">
-						<div class="diet-card-day1 p-2" data-bs-toggle="modal" data-bs-target="#exampleModal-1">Yes</div>
+					<div class="diet-card-2 card_body"  data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+						<div class="diet-card-day1 p-2">Yes</div>
 					</div>
 				</label>
 				<div class="row justify-content-center">
@@ -332,7 +332,7 @@
 
    <!-- Model  Code hear-->
    <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-scrollable">
+	<div class="modal-dialog  modal-lg">
 		<div class="modal-content">
 			<div class="modal-header border-0">
 				<h1 class="modal-title fs-5" id="exampleModalLabel">Allergies</h1>
@@ -343,46 +343,61 @@
 					<h2>Select any Allergies</h2>
 					<p>We are 100% gluten and dairy free</p>
 				</div>
-				<div class="flex justify-content-evenly mb-4">
-					<a href="" class="alergy-item-1 rounded-pill">Crustacean</a>
-					<a href="" class="alergy-item-2 rounded-pill">Eggs</a>
-					<a href="" class="alergy-item-2 rounded-pill">Gluten</a>
-					<a href="" class="alergy-item-2 rounded-pill">Milk</a>
-					<a href="" class="alergy-item-2 rounded-pill">Fish</a>
-					<a href="" class="alergy-item-2 rounded-pill">Soya</a>
+				<div class=" d-flex flex  mb-4" style="justify-content: center;">
+					<input class="form-check-input d-none" type="checkbox" value="1"  id="card29">
+  					<!-- <label class="form-check-label" for="flexCheckDefault"> -->
+					<label class=" " for="card29">
+						<div class="alergy-item-1 rounded-pill card_body">Crustacean</div>
+					</label>
+					<input class="form-check-input d-none" type="checkbox" value="1"  id="card30">
+					<label for="card30"><div class="alergy-item-1 rounded-pill card_body">Eggs</div></label>
+					<input class="form-check-input d-none" type="checkbox" value="1"  id="card31">
+					<label for="card31"><div class="alergy-item-1 rounded-pill card_body">Crustacean</div></label>
+					<input class="form-check-input d-none" type="checkbox" value="1"  id="card32">
+					<label for="card32"><div class="alergy-item-1 rounded-pill card_body">Eggs</div></label>
+					<input class="form-check-input d-none" type="checkbox" value="1"  id="card33">
+					<label for="card33"><div class="alergy-item-1 rounded-pill card_body">Gluten</div></label>
+					<input class="form-check-input d-none" type="checkbox" value="1"  id="card34">
+					<label for="card34"><div class="alergy-item-1 rounded-pill card_body">Milk</div></label>
+					<input class="form-check-input d-none" type="checkbox" value="1"  id="card35">
+					<label for="card35"><div class="alergy-item-1 rounded-pill card_body">Fish</div></label>
+					<!-- <div  class="alergy-item-1 rounded-pill">Soya</div> -->
 				</div>
-				<div class="text-center">
-					<a href="" class="alergy-item-2 rounded-pill">Peanuts</a>
-					<a href="" class="alergy-item-2 rounded-pill">Sesame Seeds</a>
-					<a href="" class="alergy-item-2 rounded-pill">Molluscs</a>
-					<a href="" class="alergy-item-2 rounded-pill">Tree Nuts</a>
+				<div class=" d-flex flex  mb-4" style="justify-content: center;">
+					<div class="alergy-item-1 rounded-pill">Peanuts</div>
+					<div class="alergy-item-1 rounded-pill">Sesame Seeds</div>
+					<div class="alergy-item-1 rounded-pill">Molluscs</div>
+					<div  class="alergy-item-1 rounded-pill">Tree Nuts</div>
+					<!-- <div  class="alergy-item-1 rounded-pill">Soya</div> -->
 				</div>
-				<hr class="value-hr my-5">
+				
+				<hr class="value-hr my-2">
 				<div class="modal-alergy">
-					<h2>Select any Allergies</h2>
+					<h2>Remove ingredients</h2>
 					<p>We are 100% gluten and dairy free</p>
 				</div>
-				<div class="flex justify-content-evenly mb-4">
-					<a href="" class="alergy-item-1 rounded-pill">Crustacean</a>
-					<a href="" class="alergy-item-2 rounded-pill">Eggs</a>
-					<a href="" class="alergy-item-2 rounded-pill">Gluten</a>
-					<a href="" class="alergy-item-2 rounded-pill">Milk</a>
-					<a href="" class="alergy-item-2 rounded-pill">Fish</a>
-					<a href="" class="alergy-item-2 rounded-pill">Soya</a>
+				<div class=" d-flex flex  mb-4" style="justify-content: center;">
+					<div class="alergy-item-1 rounded-pill">Crustacean</div>
+					<div class="alergy-item-1 rounded-pill">Eggs</div>
+					<div class="alergy-item-1 rounded-pill">Crustacean</div>
+					<div  class="alergy-item-1 rounded-pill">Eggs</div>
+					<div  class="alergy-item-1 rounded-pill">Gluten</div>
+					<div  class="alergy-item-1 rounded-pill">Milk</div>
+					<div  class="alergy-item-1 rounded-pill">Fish</div>
+					<!-- <div  class="alergy-item-1 rounded-pill">Soya</div> -->
+				</div>
+				<div class=" d-flex flex  " style="justify-content: center;">
+					<div class="alergy-item-1 rounded-pill">Peanuts</div>
+					<div class="alergy-item-1 rounded-pill">Sesame Seeds</div>
+					<div class="alergy-item-1 rounded-pill">Molluscs</div>
+					<div  class="alergy-item-1 rounded-pill">Tree Nuts</div>
+					<!-- <div  class="alergy-item-1 rounded-pill">Soya</div> -->
 				</div>
 				<div class="text-center">
-					<a href="" class="alergy-item-2 rounded-pill">Peanuts</a>
-					<a href="" class="alergy-item-2 rounded-pill">Sesame Seeds</a>
-					<a href="" class="alergy-item-2 rounded-pill">Molluscs</a>
-					<a href="" class="alergy-item-2 rounded-pill">Tree Nuts</a>
-				</div>
-				<div class="text-center">
-					<a href="#" class="scss-btn rounded-pill">Next <i class="fa-solid fa-right-long ms-2"></i></a>
+					<a href="#" class="scss-btn rounded-pill">Next <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
 				</div>
 			</div>
-			<div class="modal-footer">
-				
-			</div>
+			
 		</div>
 	</div>
 </div>
