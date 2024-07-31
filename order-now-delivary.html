@@ -35,9 +35,9 @@
 						</div>
 
 						<div class="dlvry-pay-card my-3 position-relative">
-							<div class="d-flex justify-content-center gap-3">
-								<a href="#" class="express-btn"><i class="fa-brands fa-apple-pay fa-2x"></i></a>
-								<a href="#" class="express-btn"><i class="fa-brands fa-google-pay fa-2x"></i></a>
+							<div class="d-flex justify-content-center gap-3 mx-3">
+									<a href="#" class="express-btn"><i class="fa-brands fa-apple-pay fa-2x"></i></a>
+									<a href="#" class="express-btn" ><i class="fa-brands fa-google-pay fa-2x"></i></a>
 							</div>
 							<div class="position-absolute top-0 start-50 translate-middle">
 								<div class="express-head">
@@ -51,8 +51,27 @@
 						</div>
 
 						<form class="row report-form">
+							<div class="d-flex my-4">
+								<p><h2>Contact</h2></p>
+								<p class="ms-auto mb-0 mt-2"> <a href="order-now-signup.html" class="blue-text">Log in</a></p>
+							</div>
+							<div class="col-md-12">
+								<div class=" ">
+									<label for="" class="form-label">Email</label>
+									<input type="text" class="form-control" id="floatingInput" placeholder="Enter Email">
+
+									<!-- <label for="floatingInput" class="report-custom-label">Email</label> -->
+								</div>
+								<div class="col-md-12 mt-3">
+								
+									<div class="form-check"> 
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+										<label class="form-check-label mt-0 mb-3 ms-3" for="flexCheckChecked">Email me with news and offers</label>
+									</div>
+								</div>
+							</div>
 							<div class="d-flex mb-3">
-								<h2>Shipping Address</h2>
+								<h2>Delivery</h2>
 							</div>
 							<div class="col-md-12" >
 								<div class=" ">
@@ -69,13 +88,13 @@
 									
 								</div>
 							</div>
-							<div class="col-md-12 mt-2">
+							<!-- <div class="col-md-12 mt-2">
 								<div class="">
 									<label for="floatingInput" class="form-label">Company (Optional)</label>
 									<input type="text" class="form-control" id="floatingInput" placeholder="">
 									
 								</div>
-							</div>
+							</div> -->
 							<div class="col-md-12 mt-2">
 								<div class=" ">
 									<label for="validationServer03 " class="form-label ">Address</label>
@@ -90,7 +109,7 @@
 									
 								</div>
 							</div>
-							<div class="col-md-12 mt-2">
+							<div class="col-md-6 col-sm-12 mt-2">
 								<div class=" ">
 									<label for="" class="form-label ">City</label>
 									<select class="form-select form-control" aria-label="Default select example" id="validationServer03" required>
@@ -102,13 +121,113 @@
 								
 								</div>
 							</div>
-							<div class="col-md-12 mt-2">
+							<div class="col-md-6 col-sm-12 mt-2">
+								<div class=" ">
+									<label for="validationServer03 " class="form-label ">Postal Code</label>
+									<input type="text" class="form-control is-invalid  " id="validationServer03 floatingInput" aria-describedby="validationServer03Feedback" required>
+									<div id="validationServer03Feedback" class="invalid-feedback error-input">
+									
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12 ">
 								<div class=" ">
 									<label for="validationServer03 " class="form-label ">Enter number</label>
 									<input type="text" class="form-control is-invalid  " id="validationServer03 floatingInput" aria-describedby="validationServer03Feedback" required>
 									<div id="validationServer03Feedback" class="invalid-feedback error-input">
 									
 									</div>
+								</div>
+							</div>
+							<h2 class="">Shipping method</h2>
+							<div class="pay-card-shiping d-flex">
+								<!-- <div class="form-check">
+									<input class="form-check-input rounded-5" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+									<label class="form-check-label ms-2" for="flexRadioDefault1"><img src="assets/images/Frame-583.png" class="img-fluid"> </label>
+								</div> -->
+								<div>
+									<span>Enter your shipping address to view available shipping methods.</span>
+								</div>
+								<!-- <div class="ms-auto">
+									<span>£6.00 </span>
+								</div> -->
+							</div>
+
+							<h2>Payment</h2>
+							<p class="right-lg-1 mb-0">All transaction are secure and encrypted</p>
+							<div class="pay-card-2 rounded-top-4 rounded-bottom-4">
+								<div class=" mb-4 rounded-top-4 d-flex" data-bs-toggle="collapse" href="#multiCollapseExample2">
+									<!-- <a class="d-flex"  data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2"> -->
+										<div class="form-check" >
+											<input class="form-check-input" type="radio" name="payment" id="payment">
+											<label class="form-check-label right-lg-5 ms-2" for="payment">Use card for payment</label>
+										</div>
+										<div class="ms-auto">
+											<img src="assets/images/visa-1.png" class="img-fluid">
+											<img src="assets/images/mastercard.png" class="img-fluid">
+											<img src="assets/images/american-express.png" class="img-fluid">
+										</div>
+									<!-- </a> -->
+								</div> 
+								<div class="different-bill collapse multi-collapse" id="multiCollapseExample2">
+									<form class="row">
+										<div class="col-md-12">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Card Number</label>
+												<input type="password" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback" >
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Name on Card</label>
+												<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">	
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Address</label>
+												<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Expiration Date (MM/YY)</label>
+												<input type="text" class="form-control " id="floatingInput" aria-describedby="validationServer03Feedback">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="  mb-3">
+												<label for="floatingInput" class="form-label diff-bill-label">Security Code</label>
+												<input type="password" class="form-control" id="floatingInput" aria-describedby="validationServer03Feedback">
+											</div>
+										</div>
+									</form>
+								</div> 
+								<hr>
+								<div class=" mt-4 rounded-bottom-4">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="payment" id="cashpayment">
+										<label class="form-check-label ms-2" for="cashpayment"><img src="assets/images/Frame-597.png" class="img-fluid"></label>
+									</div>
+								</div>
+							</div>
+							<p class="right-lg-1 mb-2">Where should we leave your box if you aren't in?</p>
+							<div class="col-md-12">
+								<div class="  mb-3">
+									<select class="form-select form-control py-3" aria-label="Default select example" id="validationServer03">
+										<option selected>Please select one</option>
+										<option value="1"></option>
+										<option value="2"></option>
+										<option value="3"></option>
+									</select>
+								</div>
+							</div>
+
+							<h2>Remember me</h2>
+							<div class="pay-card">
+								<div class="form-check">
+									<input class="form-check-input rounded-5" type="checkbox" name="saveinfo" id="saveinfo">
+									<label class="form-check-label ms-2" for="saveinfo">Save my information for a faster checkout</label>
 								</div>
 							</div>
 
@@ -119,13 +238,13 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="mt-5">
+								<div class="">
 									<a href="order-now-page4.html" class="return-cart-btn"><i class="fa-solid fa-arrow-left-long me-2"></i> Return to cart</a>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="text-end mt-4">
-									<a href="order-now-payment.html" class="price-plan-btn rounded-pill">Continue to Payment <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
+									<a href="order-now-success.html" class="price-plan-btn rounded-pill">Pay Now <i class="fa-solid fa-right-long ms-2"></i></a>
 								</div>
 							</div>
 							<div class="bottom-tabs mt-5">
@@ -153,33 +272,27 @@
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-6">
 					<div class="order-login-right">
+						
 						<div class="report-form">
 							<h2>Order Summary</h2>
 						</div>
 						<div class="scroll-meals">
 							<div class="order-meal-card mb-0">
 								<div class="row g-0">
-									<div class="col-3">
+									<div class="col-2">
 										<div class="position-relative">
-											<img src="assets/images/blog-mini.png" class="img-fluid recent-img rounded" alt="...">
-											<div class="position-absolute top-0 end-0 pe-4">
+											<img src="assets/images/blog-mini.png" class="img-fluid recent-img rounded-4" width="100px">
+											<!-- <div class="position-absolute top-0 end-0 pe-4">
 												<div class="meal-count">1</div>
-											</div>
+											</div> -->
 										</div>
 									</div>
-									<div class="col-7">
-										<div class="card-body p-0">
-											<p class="right-lg-2">Special Meal Box</p>
-											<p class="right-lg-1">12 Meals <br>
-												<span>Delivery every 1 Week</span>
-											</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
+									<div class="col-8">
+										<div class="card-body p-0 ms-2">
+											<div class="right-lg-2 mb-1">Special Meal Box</div>
+											<div class="right-lg-1 mb-2">
+												<span>Quantity : 2</span>
+											</div>
 										</div>
 									</div>
 									<div class="col-2">
@@ -187,52 +300,23 @@
 									</div>
 								</div>
 							</div>
-							<div class="order-meal-card mb-0">
-								<div class="row g-0">
-									<div class="col-3">
-										<div class="position-relative">
-											<img src="assets/images/blog-mini.png" class="img-fluid recent-img rounded" alt="...">
-											<div class="position-absolute top-0 end-0 pe-4">
-												<div class="meal-count">1</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-7">
-										<div class="card-body p-0">
-											<p class="right-lg-2">Special Meal Box</p>
-											<p class="right-lg-1">12 Meals <br>
-												<span>Delivery every 1 Week</span>
-											</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-											<p class="order-meal-name">Hunters BBQ Chicken with Roast Potatoes & Spinach</p>
-										</div>
-									</div>
-									<div class="col-2">
-										<p class="right-lg-2 pt-5 text-end">£90.00</p>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 						<hr class="value-hr">
 						<div class="d-flex discount-code">
 							<div>
 								<p class="right-lg-1">Subtotal</p>
 								<p class="right-lg-1">Extra</p>
-								<p class="right-lg-1 green-text">Discount (First Purchase)</p>
-								<p class="right-lg-1">Shipping total <i class="fa-solid fa-chevron-down"></i></p>
-								<p class="right-lg-1">One-time shipping</p>
+								<!-- <p class="right-lg-1 green-text">Discount (First Purchase)</p> -->
+								<p class="right-lg-1">Shipping total </p>
+								<!-- <p class="right-lg-1">One-time shipping</p> -->
 							</div>
 							<div class="ms-auto text-end">
 								<p class="right-lg-2">£90.00</p>
 								<p class="right-lg-2">£90.00</p>
-								<p class="right-lg-1 green-text">-£9.00</p>
+								<!-- <p class="right-lg-1 green-text">-£9.00</p> -->
 								<p class="right-lg-3"> Calculated at next step </p>
-								<p class="right-lg-3"> Calculated at next step </p>
+								<!-- <p class="right-lg-3"> Calculated at next step </p> -->
 							</div>
 						</div>
 						<hr class="value-hr">
@@ -250,23 +334,23 @@
 						<div class="discount-code">
 							<div class="">
 								<p class="right-lg-3">
-									<i class="fa-solid fa-truck"></i> Arriving 29th May, Wed
+									<i class="fa-solid fa-truck"></i> <span class="ms-2">Arriving 29th May, Wed</span>
 								</p>
 							</div>
 						</div>
 						<hr class="value-hr">
 						<div class="d-flex discount-code">
-							<div class="  col-md-9">
-								<input type="text" class="form-control input-code " id="floatingInput" placeholder="first name">
-								<label for="floatingInput" class="l">Gift card or discount code</label>
+							<div class=" form-floating col-md-9">
+								<input type="text" class="form-control input-code rounded-pill" id="floatingInput" placeholder="first name">
+								<label for="floatingInput" class="report-custom-label">Gift card or discount code</label>
 							</div>
 							<div class="ms-auto">
-								<a href="#" class="log-apply-btn ">Apply </a>
+								<a href="#" class="log-apply-btn rounded-pill" aria-disabled="true">Apply </a>
 							</div>
 						</div>
 						<div class="login-sub-card">
-							<p>Subscription: Wednesday & Friday delivery £3.95 and Sunday £4.95.</p>
-							<p>How a Meal subscription works</p>
+							<div class="mb-2"><b>Subscription: Wednesday & Friday delivery £3.95 and Sunday £4.95.</b></div>
+							<div>How a Meal subscription works</div>
 							<ul>
 								<li>Weekly Meal Box delivered direct to your door via DPD.</li>
 								<li>Choose your meals weekly from our monthly changing menu.</li>

@@ -1339,7 +1339,7 @@
 		text-align: center;
 	}
 	.meal-select-head{
-		padding: 12px 0 0px 0;
+		padding: 3px 0 3px 0;
 		background-color: #C2CAB4;
 		color: #0D0D0D;
 		font-family: "Roboto", sans-serif;
@@ -2531,10 +2531,13 @@
 		text-decoration: none;
 		display: inline-block;
 		font-family: "Roboto", sans-serif;
-		width: 232px;
+		width: -moz-available;
 		height: 40px;
 		text-align: center;
 		border-radius: 8px;
+	}
+	.express-btn:hover{
+		background-color: #3a3a3a;
 	}
 	.express-head{
 		padding: 15px 20px 0px 20px;
@@ -2581,6 +2584,13 @@
 		padding: 24px;
 		border-radius: 15px;
 		margin: 16px 0 32px 0;
+	}
+	.pay-card-shiping{
+		/* border: 1px solid #B4B4B4; */
+		padding: 16px;
+		border-radius: 5px;
+		margin: 16px 0 32px 0;
+		background-color: #f4f4f4;
 	}
 	.pay-card a{
 		text-decoration: none;

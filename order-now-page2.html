@@ -241,7 +241,7 @@
 			<div class="row justify-content-center ">
 				<div class="col-sm-12 col-md-12 col-lg-12">
 					<div class="diet-head text-center">
-						<h2>Select Meals Per Day</h2>
+						<h2>Select Meals Per Week</h2>
 					</div>
 				</div>
 				
@@ -249,17 +249,19 @@
 			</div>
 			<div class="">
 				<div class="d-flex mt-4" style="justify-content: center;"> 
-					<div class="day_item">
-						<a href="#select_size">
-						<input type="radio" name="card" id="card6" class="d-none">
-						<label for="card6">
-							<div class="diet-card-item card_body">
-								<div class="diet-card-day">6</div>
-								<div class="mt-2"><b>$45</b></div>
-							</div>
-						</label>
-						</a>
-					</div>
+					
+						<div class="day_item">
+							<input type="radio" name="card" id="card6" class="d-none">
+							<label for="card6">
+								<div class="diet-card-item card_body">
+									
+									<div class="diet-card-day">6</div>
+									<div class="mt-2"><b>$45</b></div>
+								
+								</div>
+							</label>
+						</div>
+					
 					<div class="day_item">
 						<a href="#select_size">
 							<input type="radio" name="card" id="card7" class="d-none">
@@ -378,7 +380,7 @@
 		</div>
 	</section>
  
-	<section class="choose-diet"id="select_size">
+	<!-- <section class="choose-diet"id="select_size">
 		<div class="container">
 			<div class="row justify-content-center mx-auto">
 				<div class="col-sm-12 col-md-8 col-lg-8 ">
@@ -422,8 +424,96 @@
 				
 			</div>
 		</div>
+	</section> -->
+
+	<section class="choose-diet">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="diet-head text-center">
+						<h2>Allergies </h2>
+					</div>
+				</div>
+				<input type="radio" name="card3" id="card24" class="d-none">
+				<label class="col-sm-12 col-md-3 col-lg-2" for="card24">
+					<div class="diet-card-2 card_body">
+						<div  class="diet-card-day1 p-2">No</div>
+					</div>
+				</label>
+				<input type="radio" name="card3" id="card25" class="d-none">
+				<label class="col-sm-12 col-md-3 col-lg-2" for="card25">
+					<div class="diet-card-2 card_body"  data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+						<div class="diet-card-day1 p-2">Yes</div>
+					</div>
+				</label>
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-8 col-lg-8">
+						<div class="alart-div">
+							<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+								<symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+									<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+								</symbol>
+							</svg>
+							<div class="alert alert-warning d-flex align-items-center" role="alert">
+								<svg class="bi flex-shrink-0 me-2 svg_ctm" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+								<div>If you select 'Yes', you must add or remove items from the pop-up section to proceed to the next step.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
-	<section class="choose-diet"id="select_size">
+
+	<section class="choose-diet">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="diet-head text-center">
+						<h2>Select Delivery Day</h2>
+					</div>
+				</div>
+				<input type="radio" name="card4" id="card26" class="d-none">
+				<label class="col-sm-12 col-md-2 col-lg-2" for="card26">
+					<div class="diet-card-2 card_body">
+						<div class="diet-card-day1">Wednesday</div>
+						<div class="mt-2"><b>22May</b></div>
+					</div>
+				</label>
+				<input type="radio" name="card4" id="card27" class="d-none">
+				<label class="col-sm-12 col-md-2 col-lg-2" for="card27">
+					<div class="diet-card-2 card_body">
+						<div class="diet-card-day1">Friday</div>
+						<div class="mt-2"><b>24May</b></div>
+					</div>
+				</label>
+				<input type="radio" name="card4" id="card28" class="d-none">
+				<label class="col-sm-12 col-md-2 col-lg-2"for="card28">
+					<div class="diet-card-2 card_body ">
+						<div class="diet-card-day1">Sunday</div>
+						<div class="mt-2"><b>26May</b></div>
+					</div>
+				</label>
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-8 col-lg-8">
+						<div class="alart-div">
+							<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+								<symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+									<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+								</symbol>
+							</svg>
+							<div class="alert alert-warning d-flex align-items-center" role="alert">
+								<svg class="bi flex-shrink-0 me-2 svg_ctm" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+								<div>DPD pre 12pm delivery. No need to be home as your meals arrive in an eco - friendly cooler box.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- <section class="choose-diet"id="select_size">
 		<div class="container">
 			<div class="row justify-content-center mx-auto">
 				<div class="col-sm-12 col-md-8 col-lg-8 ">
@@ -476,7 +566,7 @@
 				
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- <section class="choose-diet">
 		<div class="container">
 			<div class="row">
@@ -546,9 +636,9 @@
 	<section class="choose-diet">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="text-center">
-					<a href="order-now-page1.html" class="or-bck-btn rounded-pill"><i class="fa-solid fa-arrow-left-long me-2"></i> Back</a>
-					<a href="order-now-page3.html" class="scss-btn rounded-pill mt-0">Next <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
+				<div class="choose-diet text-center">
+					<a href="order-now-page2.html" class="or-bck-btn rounded-pill"><i class="fa-solid fa-arrow-left-long me-2"></i> Back</a>
+					<a href="order-now-page4.html" class="scss-btn rounded-pill mt-0">Next <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
 				</div>
 			</div>
 		</div>
